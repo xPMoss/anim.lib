@@ -21,4 +21,8 @@ then set the attributes:
     anim_toggle="true"|"false"
     
 The script will load all the divs in the document body in a Javascript array and set all the parameters. 
-  
+
+If you want to combine 2 or more effects you can nest divs with the above attributes.
+
+Have fun!
+xPM
