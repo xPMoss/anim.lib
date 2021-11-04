@@ -1,0 +1,30 @@
+
+
+
+.box{
+    position: relative;
+    width: 300px;
+    height: 200px;
+    
+
+
+}
+
+.red{ background-color: red; }
+
+.green{ background-color: green; }
+
+.yellow{ background-color: yellow; }
+
+.pink{ background-color: pink; }
+
+.blue{ background-color: blue; }
+
+.purple{ background-color: purple; }
+
+
+.yellow,.red,.purple,.green{
+    cursor: pointer;
+
+
+}

@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Animation Library</title>
+
+        <!-- min  CSS, Bootstraps -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <!-- jQuery -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <!-- Popper JS -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <!-- Bootstraps JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+        <!-- Custom CSS -->
+        <link rel="stylesheet" href="style.css">
+
+    </head>
+
+
+    <body>
+        <!-- Headline -->
+        <div class="container-fluid" id="">
+            <div class="row m-4" id="">
+                Animation Library
+            </div>       
+        </div>
+
+        <!-- Main content -->
+        <div class="container-fluid" id="maincontainer">
+            <div class="row m-4" id="main">
+                <div 
+                    class="box green p-4" 
+                    id="green" 
+                    anim="true" 
+                    anim_target="pink" 
+                    anim_event="onclick"
+                    anim_transform="translateX"
+                    anim_endvalue="300"
+                    anim_frames="10"
+                    anim_origin="center"
+                    anim_delay="1"
+                    anim_interpolation="linear"
+                    anim_toggle="true"
+                    >
+                    Onclick(translateX)<br/>
+                    Target (#pink)
+                    
+                    
+                    
+                </div>
+
+                <div 
+                    class="box red p-4" 
+                    id="red" 
+                    anim="true" 
+                    anim_target="self" 
+                    anim_event="onclick"
+                    anim_transform="scale"
+                    anim_endvalue="0.1"
+                    anim_frames="20"
+                    anim_origin="bottom"
+                    anim_delay="1"
+                    anim_interpolation="ease"
+                    anim_toggle="true"
+                    >
+                    Onclick(scale)<br/>
+
+                </div>
+                <div 
+                    class="box blue p-4" 
+                    id="blue" 
+                    anim="true" 
+                    anim_target="self" 
+                    anim_event="onhover"
+                    anim_transform="rotateZ"
+                    anim_endvalue="-90"
+                    anim_frames="20"
+                    anim_origin="top left"
+                    anim_delay="1"
+                    anim_interpolation="ease"
+                    anim_toggle="true"
+                    >
+                    Onhover(rotateZ)
+                </div>
+                <div 
+                    class="box yellow p-4" 
+                    id="yellow"
+                    anim="true" 
+                    anim_target="self" 
+                    anim_event="onclick"
+                    anim_transform="scaleY"
+                    anim_endvalue="0.1"
+                    anim_frames="20"
+                    anim_origin="top"
+                    anim_delay="0"
+                    anim_interpolation="ease"
+                    anim_toggle="true"
+                    >
+                    Onclick(scaleY)<br/>
+                </div>
+                <div 
+                    class="" 
+                    id="purple"
+                    anim="true" 
+                    anim_target="self" 
+                    anim_event="onclick"
+                    anim_transform="translateY"
+                    anim_endvalue="200"
+                    anim_frames="20"
+                    anim_origin="top left"
+                    anim_delay="0"
+                    anim_interpolation="ease"
+                    anim_toggle="true"
+                    
+                    >
+                    <div 
+                    class="box purple p-4" 
+                    id="purple"
+                    anim="true" 
+                    anim_target="self" 
+                    anim_event="onclick"
+                    anim_transform="rotateZ"
+                    anim_endvalue="90"
+                    anim_frames="20"
+                    anim_origin="center"
+                    anim_delay="0"
+                    anim_interpolation="ease"
+                    anim_toggle="true"
+                    >
+                    Onclick(translateY, rotateZ)<br/>
+                    Nested
+                </div>
+                </div>
+                <div 
+                    class="box pink p-4" 
+                    id="pink"
+                    >
+                    Target (#pink)
+                </div>
+                
+            </div>
+        </div>
+
+        <!-- JavaScript -->
+        <script src="animlib.js"></script>
+
+
+    </body>
+
+</html>
