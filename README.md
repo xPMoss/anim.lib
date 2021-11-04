@@ -5,12 +5,12 @@ Example:
 https://xpmoss.github.io/anim.lib/
 
 How to:
-Insert the Javascript document with a script-tag att the end of your Html document.
+Insert the Javascript document with a script-tag att the end of your Html body-tag.
 <script src="animlib.js"></script>
   
 Create a div-tag and set an attribute anim="true"
 then set the attributes:
-    anim_target="self"|"target id" 
+    anim_target="self"|"target id"
     anim_event="onclick"|"onload"|"onhover"
     anim_transform="rotateZ"|"scaleX"|"scaleY"|"scale"|"translateX"|"translateY"
     anim_endvalue="value of movement"
